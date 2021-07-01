@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": {
+    "email": "zlxiao97@yahoo.com",
+    "name": "tadxiao",
+    "url": "https://github.com/zlxiao97/learning-electron"
+  },
   "scripts": {
-    "start": "electron ./src/index.js"
+    "start": "electron ./src/index.js",
+    "package": "npx electron-packager . test --win --out ./dist --arch=x64 --app-version=1.0.0 --electron-version=13.1.4 --icon=./logo.ico --overwrite"
   },
-  "devDependencies": {
-    "electron": "^13.1.1"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "electron": "^13.1.4",
     "electron-squirrel-startup": "^1.0.0"
   }
 }
